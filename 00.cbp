@@ -34,8 +34,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/moment.h" />
 		<Unit filename="include/pessoa.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/moment.cpp" />
 		<Unit filename="src/pessoa.cpp" />
 		<Extensions>
 			<code_completion />

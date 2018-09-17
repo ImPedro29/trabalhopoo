@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1537213223 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\main.cpp
+	<iostream>
+	"pessoa.h"
+	"moment.h"
+
+1537210807 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\pessoa.h
+	<iostream>
+	<string>
+
+1537132606 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\src\pessoa.cpp
+	<iostream>
+	"pessoa.h"
+
+1537212663 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\moment.h
+
+1537213276 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\src\moment.cpp
+	"moment.h"
+	<stdio.h>
+	<time.h>
+
