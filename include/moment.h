@@ -1,6 +1,10 @@
 #ifndef MOMENT_H
 #define MOMENT_H
+#include <stdio.h>
+#include <time.h>
+#include <iostream>
 
+using namespace std;
 
 class moment{
     private:
@@ -11,18 +15,17 @@ class moment{
         int min;
     public:
         moment();
-        moment(const bool& d);
         virtual ~moment();
-        moment(const bool& d, const int& yearH, const int& monH, const int& dayH, const int& hourH, const int& minH);
+        moment(const int& yearH, const int& monH, const int& dayH, const int& hourH, const int& minH);
         int getYear();
         int getMon();
         int getDay();
         int getHour();
         int getMin();
 
-        //void reset(moment m);
+        void reset(void);
 
-        bool isValid(const int& yearH, const int& monH, const int& dayH, const int& hourH, const int& minH) const;
+        bool isValid(int y, int m, int d, int h, int mi);
 
 };
 

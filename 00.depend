@@ -1,21 +1,48 @@
 # depslib dependency file v1.0
-1537213223 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\main.cpp
+1537237462 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\main.cpp
 	<iostream>
-	"pessoa.h"
+	"employee.h"
 	"moment.h"
 
-1537210807 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\pessoa.h
+1537236754 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\pessoa.h
 	<iostream>
 	<string>
+	"moment.h"
 
-1537132606 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\src\pessoa.cpp
+1537233770 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\src\pessoa.cpp
 	<iostream>
 	"pessoa.h"
 
-1537212663 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\moment.h
-
-1537213276 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\src\moment.cpp
-	"moment.h"
+1537236407 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\moment.h
 	<stdio.h>
 	<time.h>
+	<iostream>
+
+1537236415 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\src\moment.cpp
+	"moment.h"
+	<string>
+	<iostream>
+
+1537233149 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\src\crianca.cpp
+	"crianca.h"
+
+1537233848 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\crianca.h
+
+1537233510 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\src\adulto.cpp
+	"adulto.h"
+
+1537234240 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\adulto.h
+	<stdio.h>
+	<iostream>
+	"pessoa.h"
+
+1537237962 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\src\employee.cpp
+	"employee.h"
+	<iostream>
+
+1537237950 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\employee.h
+	<stdio.h>
+	<iostream>
+	"pessoa.h"
+	"moment.h"
 

@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include "moment.h"
 
 using namespace std;
 
@@ -10,11 +11,12 @@ class pessoa {
     private:
         string nome;
         string endereco;
-        string cpf;
+        string rg;
+        moment nascimento;
     public:
         pessoa();
         virtual ~pessoa();
-        pessoa(const string& p_nome, const string& p_endereco, const string& cpf );
+        pessoa(const string& p_nome, const string& p_endereco, const string& p_rg , const moment& p_nascimento);
 
         void setNome (string p_nome);
         string getNome ();
@@ -22,8 +24,11 @@ class pessoa {
         void setEndereco (string p_endereco);
         string getEndereco();
 
-        void setCpf(string p_cpf);
-        string getCpf();
+        void setRg(string p_rg);
+        string getRg();
+
+        void setNascimento(moment p_nascimento);
+        moment getNascimento();
     };
 
 #endif

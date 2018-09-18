@@ -1,14 +1,8 @@
 #include "moment.h"
-#include <stdio.h>
-#include <time.h>
+#include <string>
+#include <iostream>
 
-moment::moment(){
-    year = 0;
-    mon = 0;
-    day = 0;
-    hour = 0;
-    min = 0;
-}
+using namespace std;
 
 int time(int x){
     time_t rawtime;
@@ -22,7 +16,21 @@ int time(int x){
     else if(x == 4) return timeinfo->tm_min;
 }
 
-moment::moment(const bool& d){
+int now_year = time(0);
+int now_mon = time(1);
+int now_day = time(2);
+int now_hour = time(3);
+int now_min = time(4);
+
+moment::moment(void){
+    year = now_year;
+    mon = now_mon;
+    day = now_day;
+    hour = now_hour;
+    min = now_min;
+}
+
+void moment::reset(){
     year = time(0);
     mon = time(1);
     day = time(2);
@@ -30,19 +38,16 @@ moment::moment(const bool& d){
     min = time(4);
 }
 
-moment::moment(const int& yearH = time(0), const int& monH = time(1), const int& dayH = time(2), const int& hourH = time(3), const int& minH = time(4)){
-    if(isValid(yearH, monH, dayH, dayH, hourH)){
+moment::moment(const int& yearH = 2000, const int& monH = 0, const int& dayH = 0, const int& hourH = 0, const int& minH = 0){
+    if(isValid(yearH, monH, dayH, hourH, minH)){
         year = yearH;
         mon = monH;
         day = dayH;
         hour = hourH;
         min = minH;
     }else{
-        year = 0;
-        mon = 0;
-        day = 0;
-        hour = 0;
-        min = 0;
+        delete this;
+        return;
     }
 }
 
@@ -62,23 +67,23 @@ moment::getMin(){
     return min;
 }
 
+bool moment::isValid(int y, int m, int d,int h, int mi){
+    int months1[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // Bissexto
+    int months2[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // Não bissexto
 
-bool moment::isValid(const int& yearH, const int& monH, const int& dayH, const int& hourH, const int& minH) const{
-    bool bisexto = false;
-    int months1[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    int months2[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-
-    if(yearH%4 == 0 && yearH%400 == 0 && yearH%100 != 0){
-        bisexto = true;
-    }
-
-    if(yearH > (118 + 1900) || yearH < 2000 || monH < 0 || monH > 11 || hourH < 0 || hourH > 59 || minH > 59 || minH < 0){
+    if(y%4 == 0 && y%400 == 0 && y%100 != 0){
+        if(d > months1[m]){
+            return false;
+        }
+    }else if(d > months2[m]){
+        return false;
+    }else if(m < 0 || m > 11 || h < 0 || h > 59 || mi > 59 || mi < 0){
         return false;
     }
 
+    return true;
+
 }
 
-
 moment::~moment(void){
-
 }
