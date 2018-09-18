@@ -1,18 +1,19 @@
 #include "employee.h"
 #include <iostream>
+#include <stdlib.h>
 
 using namespace std;
 
-employee::employee(){
+employee::employee(): pessoa(){
     salary = 954.00;
     weekHours = 20;
-    entryDate = new moment();
+    moment entryDate();
 }
 
-employee::employee(const string& p_nome, const string& p_endereco, const string& p_rg , const moment& p_nascimento, const float& p_salary, const int& p_weekHours, const moment& p_entryDate){
+employee::employee(const string& p_nome, const string& p_endereco, const string& p_rg , const moment& p_nascimento, const float& p_salary, const int& p_weekHours, const moment& p_entryDate) : pessoa(p_nome, p_endereco, p_rg, p_nascimento){
     salary = p_salary;
     weekHours = p_weekHours;
-    *entryDate = p_entryDate;
+    entryDate = p_entryDate;
 }
 
 float employee::getSalary(){
@@ -32,13 +33,12 @@ void employee::setWeekHours(int p_weekHours){
 }
 
 moment employee::getEntryDate(){
-    return *entryDate;
+    return entryDate;
 }
 
 void employee::setEntryDate(moment p_entryDate){
-    *entryDate = p_entryDate;
+    entryDate = p_entryDate;
 }
-
 
 employee::~employee(){
     //destrutor

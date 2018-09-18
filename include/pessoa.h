@@ -8,7 +8,7 @@
 using namespace std;
 
 class pessoa {
-    private:
+    protected:
         string nome;
         string endereco;
         string rg;

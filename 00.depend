@@ -1,10 +1,12 @@
 # depslib dependency file v1.0
-1537237462 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\main.cpp
+1537296063 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\main.cpp
 	<iostream>
 	"employee.h"
 	"moment.h"
+	"doctor.h"
+	"nurse.h"
 
-1537236754 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\pessoa.h
+1537266483 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\pessoa.h
 	<iostream>
 	<string>
 	"moment.h"
@@ -36,13 +38,34 @@
 	<iostream>
 	"pessoa.h"
 
-1537237962 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\src\employee.cpp
+1537278456 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\src\employee.cpp
 	"employee.h"
 	<iostream>
+	<stdlib.h>
 
-1537237950 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\employee.h
+1537287839 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\employee.h
 	<stdio.h>
 	<iostream>
 	"pessoa.h"
+	"moment.h"
+
+1537292767 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\doctor.h
+	<stdio.h>
+	<iostream>
+	"employee.h"
+	"moment.h"
+
+1537293517 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\src\doctor.cpp
+	"doctor.h"
+	<iostream>
+	<stdlib.h>
+
+1537296024 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\src\nurse.cpp
+	"nurse.h"
+
+1537296126 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\nurse.h
+	<stdio.h>
+	<iostream>
+	"employee.h"
 	"moment.h"
 
