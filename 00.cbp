@@ -36,14 +36,18 @@
 		</Compiler>
 		<Unit filename="include/adulto.h" />
 		<Unit filename="include/crianca.h" />
+		<Unit filename="include/doctor.h" />
 		<Unit filename="include/employee.h" />
 		<Unit filename="include/moment.h" />
+		<Unit filename="include/nurse.h" />
 		<Unit filename="include/pessoa.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/adulto.cpp" />
 		<Unit filename="src/crianca.cpp" />
+		<Unit filename="src/doctor.cpp" />
 		<Unit filename="src/employee.cpp" />
 		<Unit filename="src/moment.cpp" />
+		<Unit filename="src/nurse.cpp" />
 		<Unit filename="src/pessoa.cpp" />
 		<Extensions>
 			<code_completion />
