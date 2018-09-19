@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1537296063 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\main.cpp
+1537317817 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\main.cpp
 	<iostream>
 	"employee.h"
 	"moment.h"
 	"doctor.h"
 	"nurse.h"
 
-1537266483 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\pessoa.h
+1537318225 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\pessoa.h
 	<iostream>
 	<string>
 	"moment.h"
@@ -43,7 +43,7 @@
 	<iostream>
 	<stdlib.h>
 
-1537287839 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\employee.h
+1537318259 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\employee.h
 	<stdio.h>
 	<iostream>
 	"pessoa.h"
@@ -67,5 +67,15 @@
 	<stdio.h>
 	<iostream>
 	"employee.h"
+	"moment.h"
+
+1537320848 source:c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\src\paciente.cpp
+	"paciente.h"
+
+1537320742 c:\users\pi3vi\onedrive\unifor\poo\trabalhopoo\include\paciente.h
+	<stdio.h>
+	<iostream>
+	"doctor.h"
+	"pessoa.h"
 	"moment.h"
 

@@ -7,10 +7,11 @@
 #include "moment.h"
 
 class employee:public pessoa{
-    protected:
-        float salary;
+    private:
         int weekHours;
         moment entryDate;
+    protected:
+        float salary;
     public:
         employee();
         employee(const string& p_nome, const string& p_endereco, const string& p_rg , const moment& p_nascimento, const float& p_salary, const int& p_weekHours, const moment& p_entryDate);

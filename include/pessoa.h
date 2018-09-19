@@ -8,7 +8,7 @@
 using namespace std;
 
 class pessoa {
-    protected:
+    private:
         string nome;
         string endereco;
         string rg;
@@ -19,7 +19,7 @@ class pessoa {
         pessoa(const string& p_nome, const string& p_endereco, const string& p_rg , const moment& p_nascimento);
 
         void setNome (string p_nome);
-        string getNome ();
+        string getNome();
 
         void setEndereco (string p_endereco);
         string getEndereco();
