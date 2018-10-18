@@ -7,6 +7,9 @@
 #include "moment.h"
 
 class paciente : public pessoa{
+
+    friend ostream &operator << (ostream &, const paciente&);
+
     private:
         string disease;
         doctor doct;

@@ -7,6 +7,9 @@
 
 
 class doctor : public employee{
+
+    friend ostream &operator << (ostream &, const doctor& );
+
     private:
         string especialization;
         float plantao;

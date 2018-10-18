@@ -6,6 +6,9 @@
 #include "moment.h"
 
 class nurse : public employee{
+
+    friend ostream &operator << (ostream &, const nurse&);
+
     private:
         string room;
         string especialization;
