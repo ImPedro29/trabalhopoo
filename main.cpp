@@ -13,7 +13,7 @@ moment m1(2000, 9, 29, 1, 34);
 moment m2(2004, 9, 19, 22, 12);
 moment m3(2025, 1, 5, 2, 11);
 
-doctor d1("Gabriel Lima", "Rua almirante, 1212", "201948592", m2, 12300, 100, m3, "Clinico Geral", 24);
+doctor d1("Gabriel bundinha", "Rua almirante, 1212", "201948592", m2, 12300, 100, m3, "Clinico Geral", 24);
 paciente p1("Geronimo Alves", "Rua Albergue, 1231", "20064054781", m1, "Gripe", d1);
 
 cout << "Nome: " << p1.getNome() << endl;

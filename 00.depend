@@ -79,3 +79,63 @@
 	"pessoa.h"
 	"moment.h"
 
+1539883911 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\doctor.cpp
+	"doctor.h"
+	<iostream>
+	<stdlib.h>
+
+1539883911 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\doctor.h
+	<stdio.h>
+	<iostream>
+	"employee.h"
+	"moment.h"
+
+1539883911 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\employee.h
+	<stdio.h>
+	<iostream>
+	"pessoa.h"
+	"moment.h"
+
+1539883911 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\pessoa.h
+	<iostream>
+	<string>
+	"moment.h"
+
+1539883911 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\moment.h
+	<stdio.h>
+	<time.h>
+	<iostream>
+
+1539883911 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\employee.cpp
+	"employee.h"
+	<iostream>
+	<stdlib.h>
+
+1539883911 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\moment.cpp
+	"moment.h"
+	<string>
+	<iostream>
+
+1539883911 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\nurse.cpp
+	"nurse.h"
+
+1539883911 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\nurse.h
+	<stdio.h>
+	<iostream>
+	"employee.h"
+	"moment.h"
+
+1539883911 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\paciente.cpp
+	"paciente.h"
+
+1539883911 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\paciente.h
+	<stdio.h>
+	<iostream>
+	"doctor.h"
+	"pessoa.h"
+	"moment.h"
+
+1539883911 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\pessoa.cpp
+	<iostream>
+	"pessoa.h"
+
