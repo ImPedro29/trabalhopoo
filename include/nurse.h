@@ -4,18 +4,24 @@
 #include <iostream>
 #include "employee.h"
 #include "moment.h"
+#include "paciente.h"
+#include <vector>
+
+using namespace std;
 
 class nurse : public employee{
 
-    friend ostream &operator << (ostream &, const nurse&);
+    friend ostream &operator << (ostream &, const nurse &);
 
     private:
         string room;
         string especialization;
         float plantao;
+        vector <paciente> pacients;
+
     public:
         nurse();
-        nurse(const string& p_nome, const string& p_endereco, const string& p_rg , const moment& p_nascimento, const float& p_salary, const int& p_weekHours, const moment& p_entryDate, const string& p_room, const string& p_especialization, const float& p_plantao);
+        nurse(const string& p_nome, const string& p_endereco, const string& p_rg , const moment& p_nascimento, const float& p_salary, const int& p_weekHours, const moment& p_entryDate, const string& p_room, const string& p_especialization, const float& p_plantao, const vector<paciente>& p_pacients);
 
         string getRoom();
         void setRoom(string p_room);
@@ -25,6 +31,10 @@ class nurse : public employee{
 
         float getSalary();
         void setSalary(float p_salary, float p_plantao);
+
+        vector <paciente> getPacients();
+        void setPacients(vector <paciente> p_pacients);
+
 };
 
 #endif // NURSE_H

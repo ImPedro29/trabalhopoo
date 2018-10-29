@@ -79,63 +79,79 @@
 	"pessoa.h"
 	"moment.h"
 
-1539883911 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\doctor.cpp
+1540839394 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\doctor.cpp
 	"doctor.h"
 	<iostream>
 	<stdlib.h>
+	<vector>
+	"paciente.h"
 
-1539883911 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\doctor.h
+1540839722 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\doctor.h
 	<stdio.h>
 	<iostream>
 	"employee.h"
 	"moment.h"
+	"paciente.h"
+	<vector>
 
-1539883911 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\employee.h
+1539887511 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\employee.h
 	<stdio.h>
 	<iostream>
 	"pessoa.h"
 	"moment.h"
 
-1539883911 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\pessoa.h
+1539887511 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\pessoa.h
 	<iostream>
 	<string>
 	"moment.h"
 
-1539883911 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\moment.h
+1539887511 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\moment.h
 	<stdio.h>
 	<time.h>
 	<iostream>
 
-1539883911 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\employee.cpp
+1539887511 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\employee.cpp
 	"employee.h"
 	<iostream>
 	<stdlib.h>
 
-1539883911 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\moment.cpp
+1539887511 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\moment.cpp
 	"moment.h"
 	<string>
 	<iostream>
 
-1539883911 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\nurse.cpp
+1540838610 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\nurse.cpp
 	"nurse.h"
+	<vector>
 
-1539883911 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\nurse.h
+1540836669 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\nurse.h
 	<stdio.h>
 	<iostream>
 	"employee.h"
 	"moment.h"
+	"paciente.h"
+	<vector>
 
-1539883911 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\paciente.cpp
+1539887511 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\paciente.cpp
 	"paciente.h"
 
-1539883911 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\paciente.h
+1540837980 c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\include\paciente.h
 	<stdio.h>
 	<iostream>
 	"doctor.h"
 	"pessoa.h"
 	"moment.h"
 
-1539883911 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\pessoa.cpp
+1539887511 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\src\pessoa.cpp
 	<iostream>
 	"pessoa.h"
+
+1540838687 source:c:\users\wallisson\desktop\pedro trabalho\trabalhopoo\main.cpp
+	<iostream>
+	"employee.h"
+	"moment.h"
+	"doctor.h"
+	"nurse.h"
+	"paciente.h"
+	<vector>
 

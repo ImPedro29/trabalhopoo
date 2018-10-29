@@ -1,4 +1,5 @@
 #include "nurse.h"
+#include <vector>
 
 nurse::nurse(){
     room = "none";
@@ -6,10 +7,11 @@ nurse::nurse(){
     plantao = 0;
 }
 
-nurse::nurse(const string& p_nome, const string& p_endereco, const string& p_rg , const moment& p_nascimento, const float& p_salary, const int& p_weekHours, const moment& p_entryDate, const string& p_room, const string& p_especialization, const float& p_plantao) : employee(p_nome, p_endereco, p_rg , p_nascimento, p_salary, p_weekHours, p_entryDate){
+nurse::nurse(const string& p_nome, const string& p_endereco, const string& p_rg , const moment& p_nascimento, const float& p_salary, const int& p_weekHours, const moment& p_entryDate, const string& p_room, const string& p_especialization, const float& p_plantao, const vector<paciente>& p_pacients) : employee(p_nome, p_endereco, p_rg , p_nascimento, p_salary, p_weekHours, p_entryDate){
     room = p_room;
     especialization = p_especialization;
     plantao = p_plantao;
+    pacients = p_pacients;
 }
 
 void nurse::setEspecialization(string p_especialization){
@@ -37,4 +39,27 @@ void nurse::setSalary(float p_salary, float p_plantao){
     plantao = p_plantao;
 }
 
+vector <paciente> nurse::getPacients(){
+    return pacients;
+}
 
+void nurse::setPacients(vector <paciente> p_pacients){
+    pacients = p_pacients;
+}
+
+ostream &operator<<( ostream &output, const nurse &nurs )
+{
+
+    int i = 0;
+    nurse n = nurs;
+
+    output << "Nurse: " << n.getNome() << "\n";
+        while(i < nurs.pacients.size()){
+        paciente data = nurs.pacients[i];
+        output << "- " << data.getNome();
+        output << "\n";
+     i++;
+
+}
+ return output;
+}
