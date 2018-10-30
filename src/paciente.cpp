@@ -11,3 +11,31 @@ void paciente::setDisease(string p_disease){
 string paciente::getDisease(){
     return disease;
 }
+
+void paciente::setDoctorName(string p_doctorName){
+    doctorName = p_doctorName;
+}
+
+string paciente::getDoctorName(){
+    return doctorName;
+}
+
+void paciente::setNurseName(string p_nurseName){
+    nurseName = p_nurseName;
+}
+
+string paciente::getNurseName(){
+    return nurseName;
+}
+
+ostream &operator<<( ostream &output, const paciente &paci )
+{
+    paciente p = paci;
+
+
+    output << "Paciente: " << p.getNome() << endl;
+    output << " Medico: " << p.getDoctorName() << endl;
+    output << " Enfermeira: " << p.getNurseName() << endl;
+    output << " Doenca: " << p.getDisease() << endl;
+    output << " Geracao: " << p.getNascimento().getYear() << endl;
+}

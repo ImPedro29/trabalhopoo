@@ -1,6 +1,9 @@
 #include "nurse.h"
 #include <vector>
 
+//Global Function
+// Passar qualquer coisa para string
+
 nurse::nurse(){
     room = "none";
     especialization = "geral";
@@ -53,10 +56,18 @@ ostream &operator<<( ostream &output, const nurse &nurs )
     int i = 0;
     nurse n = nurs;
 
-    output << "Nurse: " << n.getNome() << "\n";
+    employee *ptr;
+    ptr = &n;
+
+    output << "Enfermeira: " << n.getNome() << endl;
+    output << " Salario Base: $" << ptr->getSalary() << endl;
+    output << " Salario: $" << n.getSalary() << endl;
+    output << " Especializacao: " << n.getEspecialization() << endl;
+    output << " Sala: " << n.getRoom() << endl;
+    output << " Horas Semanais: " << n.getWeekHours() << " Horas" << endl;
         while(i < nurs.pacients.size()){
         paciente data = nurs.pacients[i];
-        output << "- " << data.getNome();
+        output << " - " << data.getNome();
         output << "\n";
      i++;
 

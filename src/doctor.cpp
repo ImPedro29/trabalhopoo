@@ -1,17 +1,18 @@
 #include "doctor.h"
-#include <iostream>
-#include <stdlib.h>
+#include <vector>
 
-doctor::doctor():employee(){
-    especialization = "Clinico Geral";
-    employee::setSalary(10000);
+//Global Function
+// Passar qualquer coisa para string
+
+doctor::doctor(){
+    especialization = "geral";
     plantao = 0;
 }
 
 doctor::doctor(const string& p_nome, const string& p_endereco, const string& p_rg , const moment& p_nascimento, const float& p_salary, const int& p_weekHours, const moment& p_entryDate, const string& p_especialization, const float& p_plantao, const vector<paciente>& p_pacients) : employee(p_nome, p_endereco, p_rg , p_nascimento, p_salary, p_weekHours, p_entryDate){
-    setEspecialization(p_especialization);
-    setSalary(p_salary , p_plantao);
+    especialization = p_especialization;
     plantao = p_plantao;
+    pacients = p_pacients;
 }
 
 void doctor::setEspecialization(string p_especialization){
@@ -30,6 +31,7 @@ void doctor::setSalary(float p_salary, float p_plantao){
     salary = p_salary;
     plantao = p_plantao;
 }
+
 vector <paciente> doctor::getPacients(){
     return pacients;
 }
@@ -42,15 +44,23 @@ ostream &operator<<( ostream &output, const doctor &doct )
 {
 
     int i = 0;
-    doctor n = doct;
+    doctor d = doct;
 
-    output << "Nurse: " << n.getNome() << "\n";
+    employee *ptr;
+    ptr = &d;
+
+    output << "Doutor: " << d.getNome() << endl;
+    output << " Salario Base: $" << ptr->getSalary() << endl;
+    output << " Salario: $" << d.getSalary() << endl;
+    output << " Especializacao: " << d.getEspecialization() << endl;
+    output << " Horas Semanais: " << d.getWeekHours() << " Horas" << endl;
         while(i < doct.pacients.size()){
         paciente data = doct.pacients[i];
-        output << "- " << data.getNome();
+        output << " - " << data.getNome();
         output << "\n";
      i++;
 
 }
  return output;
 }
+
