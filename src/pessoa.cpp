@@ -7,7 +7,7 @@ pessoa::pessoa(){
     rg="";
 };
 
-pessoa::pessoa(const string& p_nome, const string& p_endereco, const string& p_rg, const moment& p_nascimento){
+pessoa::pessoa(const string& p_nome, const string& p_endereco, const string& p_rg, const date& p_nascimento){
     setNome(p_nome);
     setEndereco(p_endereco);
     setRg(p_rg);
@@ -22,11 +22,11 @@ string pessoa::getNome(){
     return nome;
 };
 
-void pessoa::setNascimento(moment p_nascimento){
+void pessoa::setNascimento(date p_nascimento){
     nascimento = p_nascimento;
 }
 
-moment pessoa::getNascimento(){
+date pessoa::getNascimento(){
     return nascimento;
 }
 

@@ -10,7 +10,7 @@ nurse::nurse(){
     plantao = 0;
 }
 
-nurse::nurse(const string& p_nome, const string& p_endereco, const string& p_rg , const moment& p_nascimento, const float& p_salary, const int& p_weekHours, const moment& p_entryDate, const string& p_room, const string& p_especialization, const float& p_plantao, const vector<paciente>& p_pacients) : employee(p_nome, p_endereco, p_rg , p_nascimento, p_salary, p_weekHours, p_entryDate){
+nurse::nurse(const string& p_nome, const string& p_endereco, const string& p_rg , const date& p_nascimento, const float& p_salary, const int& p_weekHours, const date& p_entryDate, const string& p_room, const string& p_especialization, const float& p_plantao, const vector<paciente>& p_pacients) : employee(p_nome, p_endereco, p_rg , p_nascimento, p_salary, p_weekHours, p_entryDate){
     room = p_room;
     especialization = p_especialization;
     plantao = p_plantao;
@@ -64,11 +64,10 @@ ostream &operator<<( ostream &output, const nurse &nurs )
     output << " Salario: $" << n.getSalary() << endl;
     output << " Especializacao: " << n.getEspecialization() << endl;
     output << " Sala: " << n.getRoom() << endl;
-    output << " Horas Semanais: " << n.getWeekHours() << " Horas" << endl;
+    output << " Horas Semanais: " << n.getWeekHours() << " Horas";
         while(i < nurs.pacients.size()){
         paciente data = nurs.pacients[i];
-        output << " - " << data.getNome();
-        output << "\n";
+        output << "\n - " << data.getNome();
      i++;
 
 }

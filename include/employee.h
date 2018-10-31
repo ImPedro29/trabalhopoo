@@ -4,17 +4,17 @@
 #include <stdio.h>
 #include <iostream>
 #include "pessoa.h"
-#include "moment.h"
+#include "date.h"
 
 class employee:public pessoa{
     private:
         int weekHours;
-        moment entryDate;
+        date entryDate;
     protected:
         float salary;
     public:
         employee();
-        employee(const string& p_nome, const string& p_endereco, const string& p_rg , const moment& p_nascimento, const float& p_salary, const int& p_weekHours, const moment& p_entryDate);
+        employee(const string& p_nome, const string& p_endereco, const string& p_rg , const date& p_nascimento, const float& p_salary, const int& p_weekHours, const date& p_entryDate);
 
         float getSalary();
         void setSalary(float p_salary);
@@ -22,8 +22,8 @@ class employee:public pessoa{
         int getWeekHours();
         void setWeekHours(int p_weekHours);
 
-        moment getEntryDate();
-        void setEntryDate(moment p_entryDate);
+        date getEntryDate();
+        void setEntryDate(date p_entryDate);
 
         virtual ~employee();
 };

@@ -34,16 +34,18 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/date.h" />
 		<Unit filename="include/doctor.h" />
 		<Unit filename="include/employee.h" />
-		<Unit filename="include/moment.h" />
+		<Unit filename="include/event.h" />
 		<Unit filename="include/nurse.h" />
 		<Unit filename="include/paciente.h" />
 		<Unit filename="include/pessoa.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/date.cpp" />
 		<Unit filename="src/doctor.cpp" />
 		<Unit filename="src/employee.cpp" />
-		<Unit filename="src/moment.cpp" />
+		<Unit filename="src/event.cpp" />
 		<Unit filename="src/nurse.cpp" />
 		<Unit filename="src/paciente.cpp" />
 		<Unit filename="src/pessoa.cpp" />

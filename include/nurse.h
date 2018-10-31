@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <iostream>
 #include "employee.h"
-#include "moment.h"
+#include "date.h"
 #include "paciente.h"
 #include <vector>
 
@@ -21,7 +21,7 @@ class nurse : public employee{
 
     public:
         nurse();
-        nurse(const string& p_nome, const string& p_endereco, const string& p_rg , const moment& p_nascimento, const float& p_salary, const int& p_weekHours, const moment& p_entryDate, const string& p_room, const string& p_especialization, const float& p_plantao, const vector<paciente>& p_pacients);
+        nurse(const string& p_nome, const string& p_endereco, const string& p_rg , const date& p_nascimento, const float& p_salary, const int& p_weekHours, const date& p_entryDate, const string& p_room, const string& p_especialization, const float& p_plantao, const vector<paciente>& p_pacients);
 
         string getRoom();
         void setRoom(string p_room);

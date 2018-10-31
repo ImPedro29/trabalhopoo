@@ -1,6 +1,6 @@
 #include <iostream>
 #include "employee.h"
-#include "moment.h"
+#include "date.h"
 #include "doctor.h"
 #include "nurse.h"
 #include "paciente.h"
@@ -10,9 +10,9 @@ using namespace std;
 
 int main(){
 
-    moment m1(2000, 9, 29, 1, 34);
-    moment m2(2004, 9, 19, 22, 12);
-    moment m3(2025, 1, 5, 2, 11);
+    date m1(2000, 9, 29, 1, 34);
+    date m2(2004, 9, 19, 22, 12);
+    date m3(2025, 1, 5, 2, 11);
 
     paciente p1("Fernando ALvarenga", "Rua Albergue, 1231", "20064054781", m1, "Gripe");
     paciente e1("Pedro Bundinha", "Rua Albergue, 1231", "20064054781", m1, "Gonorreia");

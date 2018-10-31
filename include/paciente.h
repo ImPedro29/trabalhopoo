@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <iostream>
 #include "pessoa.h"
-#include "moment.h"
+#include "date.h"
 
 class paciente : public pessoa{
 
@@ -15,7 +15,7 @@ class paciente : public pessoa{
         string nurseName;
 
     public:
-        paciente(const string& p_nome, const string& p_endereco, const string& p_rg , const moment& p_nascimento, const string& p_disease);
+        paciente(const string& p_nome, const string& p_endereco, const string& p_rg , const date& p_nascimento, const string& p_disease);
 
         void setDisease(string p_disease);
         string getDisease();

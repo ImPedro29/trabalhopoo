@@ -1,6 +1,6 @@
 #include "paciente.h"
 
-paciente::paciente(const string& p_nome, const string& p_endereco, const string& p_rg , const moment& p_nascimento, const string& p_disease) : pessoa(p_nome, p_endereco, p_rg, p_nascimento){
+paciente::paciente(const string& p_nome, const string& p_endereco, const string& p_rg , const date& p_nascimento, const string& p_disease) : pessoa(p_nome, p_endereco, p_rg, p_nascimento){
     setDisease(p_disease);
 }
 
@@ -33,7 +33,7 @@ ostream &operator<<( ostream &output, const paciente &paci )
     paciente p = paci;
 
 
-    output << "Paciente: " << p.getNome() << endl;
+    output << "\nPaciente: " << p.getNome() << endl;
     output << " Medico: " << p.getDoctorName() << endl;
     output << " Enfermeira: " << p.getNurseName() << endl;
     output << " Doenca: " << p.getDisease() << endl;
