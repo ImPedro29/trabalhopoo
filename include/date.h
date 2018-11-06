@@ -3,10 +3,14 @@
 #include <stdio.h>
 #include <time.h>
 #include <iostream>
+#include <stdio.h>
 
 using namespace std;
 
 class date{
+
+    friend ostream &operator << (ostream &, const date &);
+
     private:
         int year;
         int mon;

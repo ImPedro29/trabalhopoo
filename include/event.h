@@ -7,11 +7,12 @@ class event{
         int eventID;
         date startDate;
         date endDate;
+        string occurrence;
 
     public:
-        event();
-        event(const date& p_endDate);
-        event(const date& p_startDate, const date& p_endDate);
+        event(const string& p_occurrence);
+        event(const date& p_endDate, const string& p_occurrence);
+        event(const date& p_startDate, const date& p_endDate, const string& p_occurrence);
 
         int getEventID();
 
@@ -20,6 +21,9 @@ class event{
 
         date getEndDate();
         void setEndDate(date p_endDate);
+
+        string getOccurrence();
+        void setOccurrence(string p_occurrence);
 
 };
 

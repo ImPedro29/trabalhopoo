@@ -28,14 +28,12 @@ string paciente::getNurseName(){
     return nurseName;
 }
 
-ostream &operator<<( ostream &output, const paciente &paci )
-{
+ostream &operator<<( ostream &output, const paciente &paci ){
     paciente p = paci;
-
-
     output << "\nPaciente: " << p.getNome() << endl;
     output << " Medico: " << p.getDoctorName() << endl;
     output << " Enfermeira: " << p.getNurseName() << endl;
     output << " Doenca: " << p.getDisease() << endl;
     output << " Geracao: " << p.getNascimento().getYear() << endl;
+    return output;
 }

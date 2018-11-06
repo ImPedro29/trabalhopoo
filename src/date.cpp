@@ -85,5 +85,11 @@ bool date::isValid(int y, int m, int d,int h, int mi){
 
 }
 
+ostream &operator<<( ostream &output, const date &dt){
+    date da = dt;
+    output << da.getYear() << "/" << da.getMon() << "/" << da.getDay() << "/" << da.getHour() << "/" << da.getMin();
+    return output;
+}
+
 date::~date(void){
 }

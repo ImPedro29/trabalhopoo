@@ -1,6 +1,8 @@
 #include "doctor.h"
 #include <vector>
 
+using namespace std;
+
 //Global Function
 // Passar qualquer coisa para string
 
@@ -40,8 +42,7 @@ void doctor::setPacients(vector <paciente> p_pacients){
     pacients = p_pacients;
 }
 
-ostream &operator<<( ostream &output, const doctor &doct )
-{
+ostream &operator<<( ostream &output, const doctor &doct){
 
     int i = 0;
     doctor d = doct;
@@ -54,12 +55,12 @@ ostream &operator<<( ostream &output, const doctor &doct )
     output << " Salario: $" << d.getSalary() << endl;
     output << " Especializacao: " << d.getEspecialization() << endl;
     output << " Horas Semanais: " << d.getWeekHours() << " Horas";
-        while(i < doct.pacients.size()){
+    while(i < doct.pacients.size()){
         paciente data = doct.pacients[i];
         output << "\n - " << data.getNome();
-     i++;
-
-}
- return output;
+        i++;
+    }
+    output << "\n";
+    return output;
 }
 

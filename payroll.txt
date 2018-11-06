@@ -1,0 +1,8 @@
+Medico: Geraldo| Sal. Base: $10000| Salario: $20000
+Medico: Gerida| Sal. Base: $10000| Salario: $20000
+Medico: Bandind| Sal. Base: $10000| Salario: $20000
+Nurse: Samia| Sal. Base: $10000| Salario: $16000
+Nurse: Guga| Sal. Base: $10000| Salario: $16000
+Nurse: Bandind| Sal. Base: $10000| Salario: $16000
+Employee: Vanderlei| Salario: $1300
+Employee: Bin Laden| Salario: $1500

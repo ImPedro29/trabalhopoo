@@ -1,0 +1,31 @@
+doctor:
+ 0: 
+  Geraldo
+  Rua Lima Ferreira
+  65476123
+  1963/5/23/12/44
+ 20000
+  12
+  1993/1/2/22/10
+  Clinico Geral
+  doctor:
+ 1: 
+  Gerida
+  Rua Lima Ferreira
+  65476123
+  1963/5/23/12/44
+ 20000
+  12
+  1993/1/2/22/10
+  Clinico Geral
+  doctor:
+ 2: 
+  Bandind
+  Rua Lima Ferreira
+  65476123
+  1963/5/23/12/44
+ 20000
+  12
+  1993/1/2/22/10
+  Clinico Geral
+  

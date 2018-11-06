@@ -15,6 +15,7 @@ class paciente : public pessoa{
         string nurseName;
 
     public:
+
         paciente(const string& p_nome, const string& p_endereco, const string& p_rg , const date& p_nascimento, const string& p_disease);
 
         void setDisease(string p_disease);

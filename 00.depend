@@ -155,14 +155,20 @@
 	"paciente.h"
 	<vector>
 
-1540914488 source:c:\users\pi3vi\desktop\code blocks\trabalhopoo\main.cpp
+1541512430 source:c:\users\pi3vi\desktop\code blocks\trabalhopoo\main.cpp
 	<iostream>
 	"employee.h"
 	"date.h"
 	"doctor.h"
 	"nurse.h"
 	"paciente.h"
+	"event.h"
 	<vector>
+	<cstdlib>
+	"universalException.h"
+	<ctime>
+	<string>
+	"hospital.h"
 
 1540914581 c:\users\pi3vi\desktop\code blocks\trabalhopoo\include\employee.h
 	<stdio.h>
@@ -180,7 +186,7 @@
 	<time.h>
 	<iostream>
 
-1540914573 c:\users\pi3vi\desktop\code blocks\trabalhopoo\include\doctor.h
+1541126069 c:\users\pi3vi\desktop\code blocks\trabalhopoo\include\doctor.h
 	<stdio.h>
 	<iostream>
 	"employee.h"
@@ -188,7 +194,7 @@
 	"paciente.h"
 	<vector>
 
-1540914603 c:\users\pi3vi\desktop\code blocks\trabalhopoo\include\paciente.h
+1541102281 c:\users\pi3vi\desktop\code blocks\trabalhopoo\include\paciente.h
 	<stdio.h>
 	<iostream>
 	"pessoa.h"
@@ -202,7 +208,7 @@
 	"paciente.h"
 	<vector>
 
-1540914680 source:c:\users\pi3vi\desktop\code blocks\trabalhopoo\src\doctor.cpp
+1541126080 source:c:\users\pi3vi\desktop\code blocks\trabalhopoo\src\doctor.cpp
 	"doctor.h"
 	<vector>
 
@@ -216,30 +222,50 @@
 	<string>
 	<iostream>
 
-1540914655 source:c:\users\pi3vi\desktop\code blocks\trabalhopoo\src\nurse.cpp
+1541067019 source:c:\users\pi3vi\desktop\code blocks\trabalhopoo\src\nurse.cpp
 	"nurse.h"
 	<vector>
 
-1540914742 source:c:\users\pi3vi\desktop\code blocks\trabalhopoo\src\paciente.cpp
+1541067656 source:c:\users\pi3vi\desktop\code blocks\trabalhopoo\src\paciente.cpp
 	"paciente.h"
 
 1540914554 source:c:\users\pi3vi\desktop\code blocks\trabalhopoo\src\pessoa.cpp
 	<iostream>
 	"pessoa.h"
 
-1540914565 c:\users\pi3vi\desktop\code blocks\trabalhopoo\include\date.h
+1541513461 c:\users\pi3vi\desktop\code blocks\trabalhopoo\include\date.h
 	<stdio.h>
 	<time.h>
 	<iostream>
+	<stdio.h>
 
-1540914437 source:c:\users\pi3vi\desktop\code blocks\trabalhopoo\src\date.cpp
+1541513433 source:c:\users\pi3vi\desktop\code blocks\trabalhopoo\src\date.cpp
 	"date.h"
 	<string>
 	<iostream>
 
-1540992535 source:c:\users\pi3vi\desktop\code blocks\trabalhopoo\src\event.cpp
+1541122036 source:c:\users\pi3vi\desktop\code blocks\trabalhopoo\src\event.cpp
 	"event.h"
+	<cstdlib>
 
-1540992444 c:\users\pi3vi\desktop\code blocks\trabalhopoo\include\event.h
+1541121989 c:\users\pi3vi\desktop\code blocks\trabalhopoo\include\event.h
 	"date.h"
+
+1541119076 source:c:\users\pi3vi\desktop\code blocks\trabalhopoo\src\universalexception.cpp
+
+1541119639 c:\users\pi3vi\desktop\code blocks\trabalhopoo\include\universalexception.h
+	<stdexcept>
+	<vector>
+
+1541513568 source:c:\users\pi3vi\desktop\code blocks\trabalhopoo\src\hospital.cpp
+	"hospital.h"
+	<fstream>
+
+1541512442 c:\users\pi3vi\desktop\code blocks\trabalhopoo\include\hospital.h
+	<vector>
+	<stdio.h>
+	<iostream>
+	"doctor.h"
+	"nurse.h"
+	"paciente.h"
 

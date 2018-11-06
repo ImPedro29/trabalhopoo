@@ -50,8 +50,7 @@ void nurse::setPacients(vector <paciente> p_pacients){
     pacients = p_pacients;
 }
 
-ostream &operator<<( ostream &output, const nurse &nurs )
-{
+ostream &operator<<( ostream &output, const nurse &nurs){
 
     int i = 0;
     nurse n = nurs;
@@ -65,11 +64,11 @@ ostream &operator<<( ostream &output, const nurse &nurs )
     output << " Especializacao: " << n.getEspecialization() << endl;
     output << " Sala: " << n.getRoom() << endl;
     output << " Horas Semanais: " << n.getWeekHours() << " Horas";
-        while(i < nurs.pacients.size()){
+    while(i < nurs.pacients.size()){
         paciente data = nurs.pacients[i];
         output << "\n - " << data.getNome();
-     i++;
-
-}
- return output;
+        i++;
+    }
+    output << "\n";
+    return output;
 }
